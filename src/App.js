@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <div className='content'>
         {/* <h1>{ title }</h1> */}
-        <h1>App Component</h1>
+        {/* <h1>App Component</h1> */}
         <Home />
         {/* <p>Liked { likes } times</p>
         <p>{ 10 }</p>
