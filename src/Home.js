@@ -17,9 +17,14 @@ const Home = () => {
     //     setAge(60);
     //     //console.log("Hello Kuity");
     // }
+    const handleDelete = (id) => {
+        const newBlogs = blogs.filter(blog => blog.id !== id);
+        setBlogs(newBlogs);
+    }
     return (
         <div className="Home">
-            <BlogList blogs = {blogs} title = "All Blogs !"/>
+            <BlogList blogs = {blogs} title = "All Blogs !" handleDelete = {handleDelete} />
+            {/* <BlogList blogs = {blogs.filter((blog) => blog.author === "mario")} title = "Mario's blogs"/> */}
             {/* <h2>Home Page</h2> */}
             {/* <p>{ name }</p> */}
             {/* <p>{name} is {age} years old</p> */}
